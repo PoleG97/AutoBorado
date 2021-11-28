@@ -20,7 +20,7 @@ if [ "$modoBorrado" -eq 1 ];then
     echo "Filling with zeros...\n"
     sudo dd if=/dev/zero of=$FullPath bs=1M
     echo "Filling with random numbers\n"
-    suduo dd if=/dev/urandom of=$FullPath bs=1M
+    sudo dd if=/dev/urandom of=$FullPath bs=1M
     echo "Wiping data\n"
     sudo shred -vz -n 3 $FullPath
 elif [ "$modoBorrado" -eq 2 ];then
